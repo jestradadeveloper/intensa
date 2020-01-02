@@ -15,7 +15,6 @@
       <?php
       global $post;
       $post_slug = $post->post_name;
-      $post_slug=='estilo-de-vida'? $post_slug='estilo-vida':$post_slug;
       $post_slug=='pop-culture'? $post_slug='popculture':$post_slug;
       $args = array( 'numberposts' => -1, 'category_name' => $post_slug  );
       $posts = get_posts( $args );

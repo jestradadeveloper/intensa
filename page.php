@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main role="main" class="container page-template-interna-template">
 		<!-- section -->
 		<section>
 
-			<h1><?php the_title(); ?></h1>
+			<h1 class="title-internal text-center py-4"><?php the_title(); ?></h1>
 
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
