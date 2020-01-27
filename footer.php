@@ -12,7 +12,7 @@
 					</div>
 				</div>
 				<?php dynamic_sidebar("widget-area-1"); ?>
-				<div class="bg-hard-pink border-top">
+				<div class="bg-hard-pink border-top boletin-area">
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
@@ -48,7 +48,7 @@
 					<div class="col-12">
 						<p class="copyright">
 							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
-					|	Todos los derechos reservados | Hecho por <a href="https://holamundoonline.com">Rayuela Orgánica</a>
+				 | Desarrolado por <a href="https://holamundoonline.com">Rayuela Orgánica</a>
 						</p>
 						<!-- /copyright -->
 					</div>
