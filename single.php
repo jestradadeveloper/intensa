@@ -67,7 +67,7 @@
 			</section>
 			<div class="col-4 my-4">
 						<div class="sponsors">
-								adds
+								<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 						</div>
 			</div>
 	<!-- /section -->

@@ -71,6 +71,9 @@ h1,h2,h3{
 	font-weight: 800;
 	font-family: "Noto Serif", sans-serif;
 }
+.single img{
+	height: auto;
+}
 .autor-facts p{
 	line-height: 1;
 	font-size: 1.5em;
@@ -276,7 +279,7 @@ ul.instagram-pics.instagram-size-small{
 }
 .fijar{
 	position: fixed !important;
-	top: 8% !important;
+	top: 50px !important;
 	z-index: 100;
 	width: 100%;
 	right: 0;
@@ -624,9 +627,22 @@ img.attachment-large.size-large.wp-post-image{
 	font-size: 2.5em;
 	margin: 0 10px;
 }
+.instagram-pics li{
+	width: 50%;
+}
+.instagram-pics{
+	display: flex;
+	flex-wrap: wrap;
+}
 /* responsive desktop---------------------------------- */
 @media (min-width: 769px) {
-
+	.instagram-pics li{
+		width: 50%;
+	}
+	.instagram-pics{
+		display: flex;
+		flex-wrap: nowrap;
+	}
 	.fijar {
 		position: fixed !important;
 		top: 10% !important;

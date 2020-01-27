@@ -5,7 +5,7 @@
 						<div class="row">
 							<div class="col-12 text-center">
 								<h2 class="text-center bold text-dark pt-3 title-siguenos">Siguenos en Instagram</h2>
-								<a href="#" class="text-center w-100 instagram-user text-dark">@intensa.mx</a>
+								<a href="https://www.instagram.com/intensa.mx/" class="text-center w-100 instagram-user text-dark">@intensa.mx</a>
 							</div>
 						</div>
 						
@@ -17,7 +17,8 @@
 						<div class="row">
 							<div class="col-12">
 							<span class="stars-footer"><img src="<?php echo get_template_directory_uri(); ?>/img/estrellita.png" alt="" class="img-fluid"></span>
-									<?= do_shortcode('[mc4wp_form id="7123"]');?>
+									<?php dynamic_sidebar("widget-area-3"); ?>
+								
 							</div>
 						</div>
 					</div>
@@ -47,7 +48,7 @@
 					<div class="col-12">
 						<p class="copyright">
 							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
-					|	Todos los derechos reservados
+					|	Todos los derechos reservados | Hecho por <a href="https://holamundoonline.com">Rayuela Orgánica</a>
 						</p>
 						<!-- /copyright -->
 					</div>

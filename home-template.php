@@ -139,15 +139,7 @@
     <div class="container add-section-2" id="adds-2">
       <div class="row">
         <div class="col-12">
-         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-		      <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-7693878068989997"
-            data-ad-slot="8841514260"
-            data-ad-format="auto"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+          <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
         </div>
       </div>
     </div>
