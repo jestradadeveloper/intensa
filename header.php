@@ -58,12 +58,16 @@
     aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
         class="fa fa-bars"></i></span></button>
 								<div class="logo d-md-none w-100 text-center">
-								Intensa
+									<a href="<?php echo home_url(); ?>">
+									Intensa
+									</a>
 								</div>
 							</div>
 							<div class="collapse navbar-collapse dont-collapse-sm" id="menu-intensa">
 									<div class="logo d-none d-md-flex">
+										<a href="<?php echo home_url(); ?>">
 										Intensa
+										</a>
 									</div>	
 								<?php shep_main_nav(); ?>
 							</div>
