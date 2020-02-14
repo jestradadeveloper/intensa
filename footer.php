@@ -1,10 +1,26 @@
 			<!-- footer -->
+			
+			<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade modal-busqueda" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+				<?php get_search_form(); ?>
+      </div>
+      
+    </div>
+  </div>
+</div>
 			<footer class="footer" role="contentinfo">
 				<div class="bg-hard-pink">
 					<div class="container">
 						<div class="row">
 							<div class="col-12 text-center">
-								<h2 class="text-center bold text-dark pt-3 title-siguenos">Siguenos en Instagram</h2>
+								<h2 class="text-center bold text-dark pt-3 title-siguenos">Intensa en Instagram</h2>
 								<a href="https://www.instagram.com/intensa.mx/" class="text-center w-100 instagram-user text-dark">@intensa.mx</a>
 							</div>
 						</div>
@@ -48,7 +64,7 @@
 					<div class="col-12">
 						<p class="copyright">
 							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
-				 | Desarrolado por <a href="https://holamundoonline.com">Rayuela Orgánica</a>
+				 | Hecho por <a href="https://holamundoonline.com">Rayuela Orgánica</a>
 						</p>
 						<!-- /copyright -->
 					</div>

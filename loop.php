@@ -1,6 +1,6 @@
-<?php 
-
-if (have_posts()): while (have_posts()) : the_post(); ?>
+<?php ?>
+<div class="row">
+<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- article -->
 	<div class="col-4">
@@ -49,8 +49,8 @@ if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- article -->
 	<article>
-		<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
+		<h2><?php _e( 'Lo siento intensa, no encontré nada para ti, continua buscando.', 'html5blank' ); ?></h2>
 	</article>
 	<!-- /article -->
-
+	</div>
 <?php endif; ?>

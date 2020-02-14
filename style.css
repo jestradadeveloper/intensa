@@ -342,10 +342,12 @@ ul.instagram-pics.instagram-size-large{
 	flex-direction: column;
 }
 
-.navbar-nav{
-	display: block;
-
+.navbar-nav {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: row;
 }
+
 nav ul{
 	list-style: none;
 	margin-bottom: 0;
@@ -654,12 +656,41 @@ img.attachment-large.size-large.wp-post-image{
 .logo a{
 	color:#F5B8D1;
 }
+.navbar-nav{
+	width: 100%;
+}
+.left{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.btn-buscar{
+display: none;
+}
+#menu-intensa .left button svg{
+	fill: #fff;
+}
+span.stars-footer{
+	bottom: -17px;
+		left: 20px;
+		width: 30px;
+    position: absolute;
+}
 /* responsive desktop---------------------------------- */
 @media (min-width: 769px) {
+	.btn-buscar {
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+}
 	.mc4wp-form-fields input[type=email]{
 		width: 100%;
 		max-width: 480px;
+		position: relative;
 	}
+
 	.catch-instagram-feed-gallery-widget-wrapper.default .item{
 		margin:0 !important;
 		width:17%;
@@ -712,8 +743,8 @@ img.attachment-large.size-large.wp-post-image{
 	}
 	.stars-footer{
 		position: absolute;
-    left: 21%;
-    top: 10px;
+		left: 20% !important;
+    top: 52px !important;
     width: 40px;
 	}
 	.stars-footer img{
@@ -780,6 +811,48 @@ img.attachment-large.size-large.wp-post-image{
 	}
 	.navbar-nav{
 	 padding-bottom: 0px;	
+	 width: 80%;
+	}
+	.modal-busqueda{
+		background: #f5b8d1;
+	}
+	.modal-content{
+		background-color: #f5b8d1;
+		border-color: white;
+		border: 0;
+	}
+	.modal-header, .modal-footer{
+		border:0;
+	}
+	.modal-busqueda button.search-submit{
+		background-color: #f38ab3;
+		padding:22px 20px;
+		color:#000;
+		font-size: 2rem;
+		border:0;
+		margin-left: 5px;
+		font-weight: bold;
+		border-radius: 3px;
+	
+	}
+	.modal-dialog{
+		max-width: 90%;
+	}
+	.modal-busqueda .search-input{
+		background: #f5b8d1;
+		border:0;
+		border-bottom: 1px solid #f18ab3;
+		width: 80%;
+		padding: 20px 10px;
+		font-size: 2rem;
+		color: #000000;
+    font-weight: 800;
+	}
+	.close{
+		font-size: 8rem;
+    font-weight: 300;
+    color: black;
+
 	}
 	nav li {
     width: auto;
@@ -883,7 +956,7 @@ footer .copyright{
 
 }
 @media only screen and (min-width:768px) {
-
+	
 }
 @media only screen and (min-width:1024px) {
 

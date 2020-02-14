@@ -1,4 +1,5 @@
-<?php /* Template Name: Home Template */ get_header(); ?>
+<?php /* Template Name: Home Template */ get_header();
+?>
 
 	<main role="main" class="container">
     <div id="main-posts" class="my-4 py-4">
@@ -154,7 +155,7 @@
     <div class="container py-4 my-5" id="mas-nuevo">
             <div class="row">
                 <div class="col-12 text-center my-5">
-                    <h2 class="main-title"> LO MAS NUEVO</h2> 
+                    <h2 class="main-title"> LO NUEVO</h2> 
                 </div>
 
             </div>
