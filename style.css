@@ -344,8 +344,9 @@ ul.instagram-pics.instagram-size-large{
 
 .navbar-nav {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	flex-direction: row;
+	align-items: center;
 }
 
 nav ul{
@@ -856,8 +857,6 @@ span.stars-footer{
 	}
 	nav li {
     width: auto;
-		float: left;
-		margin: 0 auto;
 	}
 	nav ul li a{
 		padding: 10px 15px;
