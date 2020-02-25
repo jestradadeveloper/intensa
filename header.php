@@ -15,6 +15,7 @@
 			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta name="description" content="<?php bloginfo('description'); ?>">
+			<meta name="p:domain_verify" content="19b4a7dc0f40ea70a42e05f35ae7da22"/>
 
 			<?php wp_head(); ?>
 				<script>
@@ -26,6 +27,7 @@
 						});
         </script>
 				<script data-ad-client="ca-pub-7693878068989997" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+				
 	</head>
 	<body <?php body_class(); ?>>
 		
