@@ -783,10 +783,7 @@ span.stars-footer{
 		background: #f5b8d1;
 
 	}
-	.logo-img {
-		width: 200px !important;
 
-	}
 	.slick-dots {
 		padding-top: 40px;
 	}
@@ -875,9 +872,7 @@ span.stars-footer{
 .border-pink-top{
 	border-top: 1px solid #f391a0;
 }
-.logo-img {
-	width: 50%;
-}
+
 /* nav */
 .nav {
 

@@ -46,7 +46,7 @@
 									<div class="logo text-center py-4">
 									<a href="<?php echo home_url(); ?>" class="text-center">
 										<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-										<img src="<?php echo get_template_directory_uri(); ?>/img/Intensa.png" alt="Logo" class="logo-img">
+										<img src="<?php echo get_template_directory_uri(); ?>/img/logo-2020-intensamx.png" alt="Logo" class="logo-img">
 									</a>
 								</div>
 							</div>

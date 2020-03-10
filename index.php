@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-	<main role="main">
+	<main role="main" class="my-4">
 		<!-- section -->
-		<section class="container mt-5">
-			<div class="row">
+		<section>
+			<div class="container">
 					<?php get_template_part('loop'); ?>
 
 				

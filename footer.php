@@ -19,8 +19,8 @@
 				<div class="bg-hard-pink">
 					<div class="container">
 						<div class="row">
-							<div class="col-12 text-center">
-								<h2 class="text-center bold text-dark pt-3 title-siguenos">Intensa en Instagram</h2>
+							<div class="col-12 text-center py-3">
+								<h2 class="text-center bold text-dark pt-1 title-siguenos">Intensa en Instagram</h2>
 								<a href="https://www.instagram.com/intensa.mx/" class="text-center w-100 instagram-user text-dark">@intensa.mx</a>
 							</div>
 						</div>
@@ -64,7 +64,7 @@
 					<div class="col-12">
 						<p class="copyright">
 							&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>
-				 | Hecho por <a href="https://holamundoonline.com">Rayuela Orgánica</a>
+				
 						</p>
 						<!-- /copyright -->
 					</div>
