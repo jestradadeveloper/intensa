@@ -8,6 +8,9 @@
 			<h1 class="text-center">
 						<a  class="" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 			</h1>
+			<div class="py-1 text-center text-uppercase text-pink bold">
+			<?php the_category(', '); ?>
+			</div>
 			<div class="text-center autor-facts pb-4">
 			<p>Por: <span> <?php the_author_posts_link(); ?></span></p>
 			<p><?php the_time('d/M/Y'); ?></p>
@@ -36,16 +39,9 @@
 					<?php the_content(); // Dynamic Content ?>
 					</div>
 
-
-					<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-					<p><?php _e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-
-					<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-
 					<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
 
-					<?php comments_template(); ?>
+					<?php #comments_template(); ?>
 
 				</article>
 				<!-- /article -->

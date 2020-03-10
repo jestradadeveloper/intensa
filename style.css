@@ -19,6 +19,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 *,
 *:after,
@@ -36,18 +37,36 @@ html {
 body {
 	font:300 11px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	color:#444;
-	font-family: 'Raleway', sans-serif;
-}
-h1,h2,h3{
-	font-family: 'Noto Serif', serif;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.6em;
 
 }
+h1,h2,h3{
+	font-family: 'Lato', sans-serif;
+
+}
+p{
+	line-height: 1.6em;
+}
+.wp-block-image figcaption {
+    margin-top: .5em;
+	margin-bottom: 1em;
+	font-size: .7em;
+	color:#7b7878;
+}
+.wp-block-image figcaption a{
+    margin-top: .5em;
+	margin-bottom: 1em;
+	text-decoration:underline;
+	font-size: .8em;
+	color:#000;
+}
 .font-primary{
-	font-family: 'Noto Serif', serif;
+	font-family: 'Lato', sans-serif;
 
 }
 .font-secondary{
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 .font-title{
 	font-family: 'Noto Serif', serif;
@@ -59,7 +78,7 @@ h1,h2,h3{
 	min-height: 300px;
 }
 .main-title{
-	font-family: 'Raleway', sans-serif !important;
+	font-family: 'Sifonn Pro';
 	font-size: 2em;
 	color: #000;
 	position: relative;
@@ -159,6 +178,9 @@ input:focus {
 }
 .text-pink{
 		color:#f892a0;
+}
+.text-pink a, .text-pink p{
+	color:#f892a0;
 }
 .text-dark{
 	color:#000 !important;
@@ -591,6 +613,12 @@ img.attachment-large.size-large.wp-post-image{
 .affix + .container-fluid {
   padding-top: 0px;
 }
+.article h1 a{
+	font-family: 'Sifonn Pro';
+}
+.article h1{
+	font-family: 'Sifonn Pro';
+}
 .slick-slider{
 	padding:0 !important;
 	background:#fff;
@@ -610,6 +638,7 @@ img.attachment-large.size-large.wp-post-image{
 }
 .page p{
 	font-size: 1.5em;
+	line-height: 1.6em;
 }
 .catch-instagram-feed-gallery-widget-wrapper ul{
 	padding: 0;
