@@ -15,7 +15,8 @@
 			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta name="description" content="<?php bloginfo('description'); ?>">
-			<meta name="p:domain_verify" content="19b4a7dc0f40ea70a42e05f35ae7da22"/>
+			<!--<meta name="p:domain_verify" content="19b4a7dc0f40ea70a42e05f35ae7da22"/> -->
+			<meta name="p:domain_verify" content="cc76796345960e4d46e24e4007026b8b"/>
 			<meta property="article:author" content="Dulce" />
 			<?php wp_head(); ?>
 				<script>
