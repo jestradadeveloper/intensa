@@ -1,8 +1,9 @@
 <?php /* Template Name: Home Template */ get_header();
 ?>
-
+	<h1 class="text-white" style="font-size:.5em"><small>Intensa</small></h1>
 	<main role="main" class="container">
     <div id="main-posts" class="my-4 py-4">
+   
  
     <?php
       // The Query

@@ -70,10 +70,11 @@
 				class="fa fa-bars"></i></span></button>
 			
 								<div class="logo d-md-none w-100 text-center">
-									<h1><a href="<?php echo home_url(); ?>">
+								<a href="<?php echo home_url(); ?>">
+									
 									Intensa
 									</a>
-									</h1>
+									
 							
 								</div>
 						
@@ -102,3 +103,4 @@
 
 			</header>
 			<!-- /header -->
+		
