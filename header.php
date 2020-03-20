@@ -12,7 +12,6 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
 			<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 			
-			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<meta name="description" content="<?php bloginfo('description'); ?>">
 			<!--<meta name="p:domain_verify" content="19b4a7dc0f40ea70a42e05f35ae7da22"/> -->
@@ -27,7 +26,7 @@
 								tests: {}
 						});
         </script>
-		<script data-ad-client="ca-pub-7693878068989997" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!--<script data-ad-client="ca-pub-7693878068989997" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 		<!-- Google Tag Manager -->
 		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -71,9 +70,10 @@
 				class="fa fa-bars"></i></span></button>
 			
 								<div class="logo d-md-none w-100 text-center">
-									<a href="<?php echo home_url(); ?>">
+									<h1><a href="<?php echo home_url(); ?>">
 									Intensa
 									</a>
+									</h1>
 							
 								</div>
 						

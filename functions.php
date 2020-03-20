@@ -124,7 +124,16 @@ function set_post_views() {
 }
 add_action( 'wp', 'set_post_views' );
  
-
+function isa_add_img_title( $attr, $attachment = null ) {
+ 
+    $img_title = trim( strip_tags( $attachment->post_title ) );
+ 
+    $attr['title'] = $img_title;
+    $attr['alt'] = $img_title;
+ 
+    return $attr;
+}
+add_filter( 'wp_get_attachment_image_attributes','isa_add_img_title', 10, 2 );
 // Función para obtener el número de visualizaciones de un post
 function get_post_views($post_ID){
     $count = get_post_meta($post_ID, 'post_views', true);
