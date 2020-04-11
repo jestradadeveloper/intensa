@@ -1,7 +1,7 @@
 /*
 	Theme Name: Shep Theme
-	Theme URI: http://html5blank.com
-	Description: HTML5 Blank WordPress Theme
+	Theme URI: https://intensa.mx
+	Description: Tema Intensa
 	Version: 1.4.3
 	Author: Jose Estrada (@josemaesma)
 	Author URI: http://josemaesma.com
@@ -16,9 +16,6 @@
 \*------------------------------------*/
 
 /* global box-sizing */
-
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 *,
@@ -69,7 +66,8 @@ p{
 	font-family: 'Lato', sans-serif;
 }
 .font-title{
-	font-family: 'Noto Serif', serif;
+
+	font-family: 'Lato', sans-serif;
 
 }
 .add-section-2{
@@ -78,7 +76,6 @@ p{
 	min-height: 300px;
 }
 .main-title{
-	font-family: 'Sifonn Pro';
 	font-size: 2em;
 	color: #000;
 	position: relative;
@@ -88,7 +85,6 @@ p{
 .single h1{
 	font-size: 3em;
 	font-weight: 800;
-	font-family: "Noto Serif", sans-serif;
 }
 .single img{
 	height: auto;
@@ -102,7 +98,6 @@ p{
 	font-size: 3em;
 }
 .title-internal{
-	font-family: 'Sifonn Pro';
 	font-size: 1.5em;
 	color: #000;
 	position: relative;
@@ -117,9 +112,6 @@ p{
 	left: 25%;
 	height: 2px;
 	background:#f8b9d1;
-}
-.font-title a{
-	font-size: 1.2em;
 }
 /* clear */
 .clear:before,
@@ -584,7 +576,6 @@ nav ul li a:hover{
 	color:#fff;
 	font-size: 2em;
 	font-weight: 800;
-	font-family: 'Sifonn Pro';
 	transition:.6s ease;
 	opacity: 1;
 	transform: scale(1);
@@ -612,12 +603,6 @@ img.attachment-large.size-large.wp-post-image{
 
 .affix + .container-fluid {
   padding-top: 0px;
-}
-.article h1 a{
-	font-family: 'Sifonn Pro';
-}
-.article h1{
-	font-family: 'Sifonn Pro';
 }
 .slick-slider{
 	padding:0 !important;
@@ -706,8 +691,18 @@ span.stars-footer{
 		width: 30px;
     position: absolute;
 }
+.font-title a{
+	font-size: .9em;
+}
+.article .content-text a{
+	color:#f892a0;
+}
 /* responsive desktop---------------------------------- */
 @media (min-width: 769px) {
+
+	.font-title a{
+		font-size: 1.2em;
+	}
 	.btn-buscar {
     width: 20%;
     justify-content: center;
@@ -950,24 +945,6 @@ footer .copyright{
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
-
-@font-face {
-	font-family:'Font-Name';
-	src:url('fonts/font-name.eot');
-	src:url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
-		url('fonts/font-name.woff') format('woff'),
-		url('fonts/font-name.ttf') format('truetype'),
-		url('fonts/font-name.svg#font-name') format('svg');
-    font-weight:normal;
-    font-style:normal;
-}
-@font-face {
-	font-family: 'Sifonn Pro';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Sifonn Pro'), url('fonts/SIFONN_PRO.woff') format('woff');
-	}
-
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
@@ -1141,4 +1118,18 @@ a img.aligncenter {
 	h3 {
 		page-break-after:avoid;
 	}
+}
+
+
+input.wpcf7-form-control.wpcf7-submit{
+	background: #f8b9d1;
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+textarea.wpcf7-form-control.wpcf7-textarea, input.wpcf7-form-control.wpcf7-text.wpcf7-email.wpcf7-validates-as-required.wpcf7-validates-as-email {
+    background: #ffeef5;
+    border-color: #f8b9d1;
 }
