@@ -317,11 +317,18 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
     echo $output;
 }
 
+
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 10;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
 // Custom View Article link to Post
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '... <a class="view-article  text-pink d-block" href="' . get_permalink($post->ID) . '">' . __('Leer más', 'html5blank') . '</a>';
 }
 
 //-- Remove Admin bar

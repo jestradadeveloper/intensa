@@ -39,9 +39,12 @@
 
 		<?php edit_post_link(); ?>
 
+		
 	</article>
 	</div>
 	<!-- /article -->
+
+
 
 <?php endwhile; ?>
 
