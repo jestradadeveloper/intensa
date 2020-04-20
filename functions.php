@@ -337,6 +337,8 @@ function remove_admin_bar()
     return false;
 }
 
+add_theme_support( 'custom-logo' );
+
 // Remove 'text/css' from our enqueued stylesheet
 function html5_style_remove($tag)
 {

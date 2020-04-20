@@ -2,7 +2,7 @@
 	<div class="container article">
 	<main role="main" class="mt-4 row">
 	<!-- section -->
-			<section class="col-12 col-md-8 my-4">
+			<section class="col-12 col-md-8  offset-md-2 my-4">
 
 			<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 			<h1 class="text-center">
@@ -106,9 +106,9 @@
 			
 
 			</section>
-			<div class="col-4 my-4">
+			<div class="col-4 my-4 d-none">
 						<div class="sponsors">
-								<?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
+								<?php //if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
 						</div>
 			</div>
 	<!-- /section -->

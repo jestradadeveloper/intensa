@@ -55,7 +55,19 @@
 									<div class="logo text-center py-4">
 									<a href="<?php echo home_url(); ?>" class="text-center">
 										<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-										<img src="<?php echo get_template_directory_uri(); ?>/img/logo-2020-intensamx.png" alt="Logo" class="logo-img">
+										<?php
+										if (!has_custom_logo()) {
+											?>
+											<h1><?php bloginfo('name'); ?></h1>
+											<?php
+										}else{
+											$custom_logo_id = get_theme_mod( 'custom_logo' );
+											$image = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+											echo '<img class="logo-img header_logo" src="'.$image[0].'">';
+										}
+
+										?>
+										
 									</a>
 								</div>
 							</div>

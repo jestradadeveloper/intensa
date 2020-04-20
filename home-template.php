@@ -138,13 +138,7 @@
 
       </div>
     </div>
-    <div class="container add-section-2" id="adds-2">
-      <div class="row">
-        <div class="col-12">
-          <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('widget-area-2')) ?>
-        </div>
-      </div>
-    </div>
+
    <!-- <div class="container py-4 my-5" id="favoritos">
             <div class="row">
                 <div class="col-12 text-center">
