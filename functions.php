@@ -145,6 +145,7 @@ function get_post_views($post_ID){
     }
     return $count;
 }
+
 // Load HTML5 Blank scripts (header.php)
 function html5blank_header_scripts()
 {

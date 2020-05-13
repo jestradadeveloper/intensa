@@ -99,9 +99,10 @@
       <?php
       // The Query
       $args= array(
-        'orderby' => 'date',
         'posts_per_page' =>5,
-        'meta_key'=> 'post_views'
+        'meta_key'=> 'post_views',
+        'orderby' => 'meta_value_num',
+        'order' => 'DESC',
       );
       $the_query = new WP_Query($args);
       $num=1;
