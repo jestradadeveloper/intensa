@@ -362,7 +362,17 @@ ul.instagram-pics.instagram-size-large{
 	flex-direction: row;
 	align-items: center;
 }
-
+.navbar-header{
+	display: flex;
+    width: 100%;
+}
+.logo .socials a{
+	font-size: 2.5rem;
+}
+.socials a:hover{
+	transition: .3s ease;
+	color:#000;
+}
 nav ul{
 	list-style: none;
 	margin-bottom: 0;

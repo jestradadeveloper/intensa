@@ -62,9 +62,10 @@
       <?php
       // The Query
       $args= array(
-        'orderby' => 'date',
         'posts_per_page' =>5,
         'meta_key'=> 'post_views',
+        'orderby' => 'meta_value_num',
+        'order' => 'DESC',
       
       );
       $the_query = new WP_Query($args);
@@ -155,9 +156,7 @@
                 </div>
 
             </div>
-
-
-               
+            <div id="content">
             <?php
                   // The Query
                   $args= array(
@@ -194,14 +193,28 @@
                       <?php 
                       echo '</div>';
                     }
+                    
+                   
+
+                      echo '</div>';
                     echo '</div>';
+
+                    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+ 
+                    if (  $the_query->max_num_pages > 1  && function_exists( 'more_post_ajax' )){
+                      echo '<div class="text-center w-100 my-4">';
+                      echo '<div class="btn btn-outline-dark btn-block intensa_loadmore p-4 text-uppercase" id="more_posts">Cargar mas notas</div>'; // you can use <a> as well
+                      echo '</div>';
+                    }
                     /* Restore original Post Data */
                     wp_reset_postdata();
                   } else {
                     // no posts found
                         }
                   ?>
-    
+          
+
+              
 
 
     </div>
@@ -209,5 +222,32 @@
 
   </div>
   
+<script>
+  var ajaxUrl = "<?php echo admin_url('admin-ajax.php', null); ?>";
+  var page = 1; // What page we are on.
+  var ppp = 8; // Post per page
 
+  var maxPageNumber  =  <?php echo $the_query->max_num_pages ?>   ;     
+ 
+
+          
+  jQuery("#more_posts").on("click",function(){ // When btn is pressed.
+      jQuery("#more_posts").attr("disabled",true); // Disable the button, temp.
+      jQuery.post(ajaxUrl, {
+          action:"more_post_ajax",
+          offset: (page * ppp) + 1,
+          ppp: ppp,
+          page: page
+      }).success(function(posts){
+          page++;
+          jQuery("#content").append(posts);
+          jQuery("#more_posts").attr("disabled",false);
+          if(   page >=  maxPageNumber){
+            jQuery("#more_posts").remove();
+          };
+      });
+
+    });
+
+</script>
 <?php get_footer(); ?>
