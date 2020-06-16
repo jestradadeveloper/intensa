@@ -203,7 +203,7 @@
  
                     if (  $the_query->max_num_pages > 1  && function_exists( 'more_post_ajax' )){
                       echo '<div class="text-center w-100 my-4">';
-                      echo '<div class="btn btn-outline-dark btn-block intensa_loadmore p-4 text-uppercase" id="more_posts">Cargar mas notas</div>'; // you can use <a> as well
+                      echo '<div class="btn btn-outline-dark btn-block intensa_loadmore p-4 text-uppercase" id="more_posts">Cargar más notas</div>'; // you can use <a> as well
                       echo '</div>';
                     }
                     /* Restore original Post Data */
